@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(47, 12px);
+            grid-template-rows: repeat(5, 50px);
+            row-gap: 10px;
+            column-gap: 7px;
+        }
+
+        .item {
+            border-radius: 5px;
+            grid-column: span 3;
+            padding-top: 17px;
+            font-size: 18px;
+            text-align: center;
+            background: #3a424e;
+            color: white;
+        }
+
+        .item:hover {
+            background: #d4af37;
+            color: white;
+        }
+
+        .doubleitem {
+            border-radius: 5px;
+            grid-column: span 3;
+            font-size: 18px;
+            background: #3a424e;
+            color: white;
+        }
+
+        .doubleitem:hover {
+            background: #d4af37;
+            color: white;
+        }
+
+        .itemsup {
+            font-size: 13px;
+            padding-right: 20px;
+        }
+
+        .blackkeys {
+            background: #242424;
+            color: #727675;
+        }
+
+        .blackkeys:hover {
+            background: #d4af37;
+            color: #727675;
+        }
+
+        .bluekeys {
+            background: #5571ee;
+            color: #727675;
+        }
+
+        .bluekeys:hover {
+            background: #d4af37;
+            color: #727675;
+        }
+
+        .backspace {
+            grid-column: span 7;
+        }
+
+        .tab {
+            grid-column: span 4;
+        }
+
+        .capslock {
+            grid-column: span 7;
+        }
+
+        .enter {
+            grid-column: span 6;
+        }
+
+        .leftshift {
+            grid-column: span 7;
+        }
+
+        .leftctrl {
+            grid-column: span 5;
+        }
+
+        .space {
+            grid-column: span 18;
+        }
+
+        .rightctrl {
+            grid-column: span 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="doubleitem blackkeys" style="color: white;"><span class="itemsup">~</span><br>`</div>
+        <div class="doubleitem"><span class="itemsup">!</span><br>1</div>
+        <div class="doubleitem"><span class="itemsup">@</span><br>2</div>
+        <div class="doubleitem"><span class="itemsup">#</span><br>3</div>
+        <div class="doubleitem"><span class="itemsup">$</span><br>4</div>
+        <div class="doubleitem"><span class="itemsup">%</span><br>5</div>
+        <div class="doubleitem"><span class="itemsup">^</span><br>6</div>
+        <div class="doubleitem"><span class="itemsup">&</span><br>7</div>
+        <div class="doubleitem"><span class="itemsup">*</span><br>8</div>
+        <div class="doubleitem"><span class="itemsup">(</span><br>9</div>
+        <div class="doubleitem"><span class="itemsup">)</span><br>0</div>
+        <div class="doubleitem"><span class="itemsup">-</span><br>-</div>
+        <div class="doubleitem"><span class="itemsup">+</span><br>=</div>
+        <div class="item backspace blackkeys">Backspace</div>
+
+
+        <div class="item tab blackkeys">Tab</div>
+        <div class="item">Q</div>
+        <div class="item">W</div>
+        <div class="item">E</div>
+        <div class="item">R</div>
+        <div class="item">T</div>
+        <div class="item">Y</div>
+        <div class="item">U</div>
+        <div class="item">I</div>
+        <div class="item">O</div>
+        <div class="item">P</div>
+        <div class="item">[</div>
+        <div class="item">]</div>
+        <div class="doubleitem"><span class="itemsup">/</span><br>\</div>
+        <div class="item blackkeys">DEL</div>
+
+
+        <div class="item capslock blackkeys">Caps Lock</div>
+        <div class="item">A</div>
+        <div class="item">S</div>
+        <div class="item">D</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">;</div>
+        <div class="item">'</div>
+        <div class="item enter blackkeys">ENTER</div>
+
+
+        <div class="item leftshift blackkeys">Shift</div>
+        <div class="item">\</div>
+        <div class="item">Z</div>
+        <div class="item">X</div>
+        <div class="item">C</div>
+        <div class="item">V</div>
+        <div class="item">B</div>
+        <div class="item">N</div>
+        <div class="item">M</div>
+        <div class="item">,</div>
+        <div class="item">.</div>
+        <div class="item">/</div>
+        <!-- <div class="item blackkeys">&#9651;</div> -->
+        <div class="item blackkeys arrow">&#9650;</div>
+        <div class="item blackkeys">Shift</div>
+
+
+        <div class="item leftctrl bluekeys">Ctrl</div>
+        <div class="item blackkeys">Win</div>
+        <div class="item bluekeys">Alt</div>
+        <div class="item space"></div>
+        <div class="item blackkeys">Alt</div>
+        <div class="item rightctrl blackkeys">Ctrl</div>
+        <div class="item blackkeys arrow">&#9668;</div>
+        <div class="item blackkeys arrow">&#9660;</div>
+        <div class="item blackkeys arrow">&#9658;</div>
+    </div>
+</body>
+
+</html>
